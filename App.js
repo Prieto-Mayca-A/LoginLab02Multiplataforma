@@ -22,23 +22,25 @@ export default class LoginView extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.inputContainer}>
+        <Image source={require("./img/images.png")} />
+        <Text></Text> 
+        <View style={styles.inputContainer}>  
         <Image style={[styles.icon, styles.inputIcon]} source={{uri: 'https://definicion.de/wp-content/uploads/2019/06/perfildeusuario.jpg'}}/>
           <TextInput style={styles.inputs}
               placeholder="Usuariol"
               underlineColorAndroid='transparent'/>
         </View>
-        
+
         <View style={styles.inputContainer}>
           <Image style={[styles.icon, styles.inputIcon]} source={{uri: 'https://cdn.icon-icons.com/icons2/2387/PNG/512/public_padlock_unlock_person_people_icon_144648.png'}}/>
           <TextInput style={styles.inputs}
               placeholder="Contraseña"
-             
+
               underlineColorAndroid='transparent'/>
         </View>
      
         <TouchableOpacity style={styles.restoreButtonContainer}>
-            <Text>Eres o no eres?</Text>
+            <Text>Se olvido su contraseña?</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={[styles.buttonContainer, styles.loginButton]}>
